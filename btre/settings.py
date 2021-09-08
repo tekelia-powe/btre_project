@@ -144,4 +144,9 @@ EMAIL_HOST_USER = 'tekeliap@gmail.com'
 EMAIL_HOST_PASSWORD = 'Mommy@2016'
 EMAIL_USE_TLS=True
 
+try:
+    from .local_settings.py import *
+except ImportError:
+    pass
+
 
